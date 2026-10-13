@@ -1,0 +1,14 @@
+HTML 
+body {
+    background: #e1f3f1;
+    padding: 50px;
+}
+h1,
+h2,
+h3 {
+    color: #683ee6;
+    font-family: sans-serif;
+}
+img {
+    width: 200px;
+}
