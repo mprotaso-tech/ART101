@@ -1,0 +1,58 @@
+body {
+  background-image: url("pinkponyclub.jpeg");
+ 
+}
+P {background-color: aliceblue;opacity: 70%;}
+
+H1 {background-color: aliceblue;opacity: 70%;}
+p {
+    color: #1d1184;
+    font-family: sans-serif;
+}
+H1 {
+    color: #1d1184;
+    font-family: sans-serif;
+}
+
+img {
+    width: 200px;
+}
+
+img {
+    width: 400px;
+}
+#page {
+    max-width: 900px;
+    margin: 0 auto 0 auto;
+    background: white/30%;
+    padding: 30px;
+}
+
+.main img {
+    width: 400px;
+    border-radius: 12px;
+}
+
+.top {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    margin: 0 0 25px 0;
+}
+.main {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+#pinkie {
+    width: 400px;
+}
+
+#nyan {
+    width: 400px;
+}
+#star {
+    width: 100px;
+}
