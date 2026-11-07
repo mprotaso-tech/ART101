@@ -1,0 +1,61 @@
+HTML {background-color:rgb(244, 207, 214);}
+
+A{color:brown;}
+A:hover {color:blueviolet;}
+
+UL {color: red;}
+
+H1 {background:rgb(19, 32, 113);
+color: aqua;
+}
+
+P {color:blueviolet;} 
+
+IMG {
+    display:block;
+     margin-left:auto;
+      margin-right:auto;
+    }
+
+
+    p{background-color: rgb(211, 231, 249);
+    padding: 20%;
+    margin: 50px;
+    font-size: 17px;
+    width: 50%;
+    }
+
+   .highlight_01 {background-color: aquamarine;}
+   .highlight_01 strong {background-color: rgb(173, 205, 255);}
+    
+
+
+   #main {
+    background-color: deeppink;
+     padding: 50px; 
+     margin:100px; }
+
+     .color-circle {
+   display: inline-block;
+   width: 36px;
+   height: 36px;
+   margin-right: 8px;
+   border: 2px solid black;
+   border-radius: 50%;
+   cursor: pointer;
+}
+
+.color-circle {
+   display: inline-block;
+   width: 36px;
+   height: 36px;
+   margin-right: 8px;
+   border: 2px solid black;
+   border-radius: 50%;
+   cursor: pointer;
+}
+
+#green  { background-color: green; }
+#orange { background-color: orange; }
+#pink   { background-color: pink; } 
+
