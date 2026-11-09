@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-image: url("pinkponyclub.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* tint layer: sits over the background image, under the content */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background: rgba(30, 15, 90, 0);
+    transition: background 0.6s;
+}
+
+body.night::before {
+    background: rgba(30, 15, 90, 0.65);
+}
+
+#page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+h1, p {
+    color: #1d1184;
+    background-color: rgba(240, 248, 255, 0.75);
+    padding: 10px 14px;
+    border-radius: 12px;
+}
+
+h1 { margin-top: 0; text-align: center; }
+
+.top {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+#star { width: 100px; }
+
+.main { display: flex; justify-content: center; }
+
+#interaction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+}
+
+.characters {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.characters img {
+    width: 280px;
+    max-width: 100%;
+}
+
+#button1 {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#button1:hover { transform: scale(1.05); }
+
+#environment-output,
+#mood {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    width: 320px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+#environment-output { font-size: 18px; }
+#environment-output p { margin: 4px 0; background: none; padding: 0; }
+
+#mood { color: #1d1184; font-size: large; }
+#mood:empty { display: none; }
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 999px;
+    background: #ff6fb5;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+button:hover { background: #e0489a; }
+button:active { transform: scale(0.96); }
+
+body.night {
+    background-image:
+        linear-gradient(rgba(30, 15, 90, 0.65), rgba(30, 15, 90, 0.65)),
+        url("pinkponyclub.jpeg");
+}
+
+#secret {
+    display: none;
+    background: rgba(255, 255, 255, 0.9);
+    color: #1d1184;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+#button1.excited {
+    filter: brightness(1.15) saturate(1.3);
+    transform: scale(1.1) rotate(-3deg);
+}
+
+#nyan {
+    position: relative;
+}
